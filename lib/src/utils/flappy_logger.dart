@@ -1,7 +1,7 @@
 import 'dart:io';
 
 var isTestingEnvironment = false;
-
+/// Flappy logger to show error below
 class FlappyLogger {
   static void logError(String text) {
     print('[ERROR] $text\n');

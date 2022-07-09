@@ -1,7 +1,5 @@
 import 'dart:io';
 
-
-
 import '../../configs/constants.dart' as constants;
 import '../../extensions/file_extensions.dart';
 import '../../extensions/string_extensions.dart';

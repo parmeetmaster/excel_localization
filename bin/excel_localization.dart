@@ -1,10 +1,8 @@
 import 'dart:io';
 
-
-
 import 'package:excel_localization/src/services/excel_localization.dart';
 import 'package:yaml/yaml.dart';
-
+/// this is entry point of main file
 void main() {
   // try to load settings from the project's pubspec.yaml
   final settings = _loadSettings();
@@ -16,7 +14,7 @@ void main() {
     return;
   }
 
-  // parse csv to dart
+  /// parse csv to dart
   final excelTranslator = ExcelLocalizaton();
   excelTranslator.generate(
     settings[_YamlArguments.inputFilePath],
@@ -40,7 +38,6 @@ void main() {
 
 /// The path to the pubspec file path
 const _pubspecFilePath = 'pubspec.yaml';
-
 
 /// The section id for flappy-translator in the yaml file
 const _yamlSectionId = 'excel_localization';

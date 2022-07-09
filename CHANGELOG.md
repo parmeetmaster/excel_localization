@@ -1,3 +1,9 @@
+
+## 0.0.2
+
+* Readme added and links added
+
+
 ## 0.0.1
 
 * In this application user can create language variable 
