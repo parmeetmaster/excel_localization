@@ -4,7 +4,7 @@ import 'package:excel_localization/src/services/excel_localization.dart';
 import 'package:yaml/yaml.dart';
 /// this is entry point of main file
 void main() {
-  // try to load settings from the project's pubspec.yaml
+  /// try to load settings from the project's pubspec.yaml
   final settings = _loadSettings();
 
   // display an error and quit if the input file hasn't been specified

@@ -1,3 +1,7 @@
+## 0.0.6
+
+* Linux and windows support added and web support fixed
+
 ## 0.0.3
 
 * Readme added and links added
