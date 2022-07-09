@@ -1,3 +1,6 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* In this application user can create language variable 
+* based files for easy use of localisation in realtime application under the standard of I18n localisation 
+* provided by flutter
+* 

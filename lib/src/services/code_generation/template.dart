@@ -27,7 +27,7 @@ class #CLASS_NAME# {
   static #CLASS_NAME# of(BuildContext context) => 
     Localizations.of<#CLASS_NAME#>(context, #CLASS_NAME#)!;
 
-  static I18n get translate=>_globalTranslate();
+  static #CLASS_NAME# get translate=>_globalTranslate();
 
   static _globalTranslate() {
     try{
