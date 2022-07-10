@@ -6,6 +6,8 @@ This is especially useful as any team member can edit the CSV/Excel file, with t
 
 Note that as of version 2.0.0, null safe code is generated. Please use version 1.5.0 for non-null safe projects.
 
+Special thanks for motivation : [Click here](https://animekill.com/ "Click here")
+
 ## Getting Started
 
 In order to use the *excel_localization* package, please provide your translations in a CSV or Excel file. For CSV files, delimiters `,` and `;` have been tested to work.
@@ -107,8 +109,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+   navigatorKey: I18n.languageKey, //<== This is require if you like to call words without context
       localizationsDelegates: [
-	    navigatorKey: I18n.languageKey, //<== This is require if you like to call words without context
+
         const I18nDelegate(),
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -189,6 +192,9 @@ String welcome({
 
 Note that if the variable's name starts with a number, the generated variable name will be `var<VAR NAME>`. So, for instance, `%1$d` would become `var1`.
 
-### You can also watch youtube Video to understand
+
+
+### You can also watch youtube Video to understand this plugin
 [![](https://github.com/parmeetmaster/excel_localization/blob/master/assets/png/youtube.webp)](https://www.youtube.com/watch?v=kQxZ1N1yb_s&ab_channel=parmeetsingh)
+
 
