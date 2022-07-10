@@ -1,6 +1,6 @@
 name: excel_localization
 description: This excel localization is project that user can use to generate variable values for using localisation. and manage localization without context.
-version: 0.0.8
+version: 0.0.9
 homepage: https://github.com/parmeetmaster/excel_localization
 repository: https://github.com/parmeetmaster/excel_localization
 
