@@ -31,7 +31,7 @@ class CodeGenerator {
     bool exposeLocaStrings = DefaultSettings.exposeLocaStrings,
     bool exposeLocaleMaps = DefaultSettings.exposeLocaleMaps,
   }) : _quoteString = useSingleQuotes ? '\'' : '"' {
-    // construct template
+    /// construct template
     _template = Template.begining +
         (dependOnContext
             ? Template.middleDependContext
@@ -59,6 +59,8 @@ class CodeGenerator {
   void setSupportedLanguages(List<String> supportedLanguages) {
     _supportedLanguages = supportedLanguages;
 
+
+    /// supported locals are generate string
     var supportedLocals = 'static final Set<Locale> supportedLocals = {\n';
     for (var lang in supportedLanguages) {
       final parts = lang.split('_');
@@ -91,6 +93,7 @@ class CodeGenerator {
     final hasParameters = _parametersRegex.hasMatch(defaultWord);
     if (hasParameters) {
       var parameters = '';
+      /// Here we are checking is using using d as int and s string
       final matches = _parametersRegex.allMatches(defaultWord).toList();
       for (final match in matches) {
         final parameterType = match.group(2) == 'd' ? 'int' : 'String';

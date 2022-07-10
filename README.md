@@ -1,4 +1,4 @@
-# excel_localization
+# Excel Localization
 
 A tool which automatically generates Flutter localization resources from CSV and Excel files.
 
@@ -137,6 +137,11 @@ class Home extends StatelessWidget {
             Text(I18n.of(context).plainText),
             Text(I18n.of(context).welcome(name: 'Simran')),
             Text(I18n.of(context).favoriteColor),
+			// To access variable without con the way is given below just replace of(context) to translate keyword
+			// Make sure you add navigatorkey parameter in MaterialApp or GetMaterialApp
+			Text(I18n.translate.plainText),
+            Text(I18n.translate.welcome(name: 'Simran')),
+            Text(I18n.translate.favoriteColor),
           ],
         ),
       ),
@@ -183,3 +188,7 @@ String welcome({
 ```
 
 Note that if the variable's name starts with a number, the generated variable name will be `var<VAR NAME>`. So, for instance, `%1$d` would become `var1`.
+
+### You can also watch youtube Video to understand
+[![](https://github.com/parmeetmaster/excel_localization/blob/master/assets/png/youtube.webp)](https://www.youtube.com/watch?v=kQxZ1N1yb_s&ab_channel=parmeetsingh)
+
