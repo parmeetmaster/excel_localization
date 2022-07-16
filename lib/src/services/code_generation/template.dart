@@ -19,12 +19,13 @@ class #CLASS_NAME# {
 
   static const String middleDependContext = '''
   #CLASS_NAME#(Locale locale) : _locale = locale {
-     activeLocale ??= locale; // assign value if its null
+     _activeLocaleHolder ??= locale; // assign value if its null
     _localizedValues = {};
   }
 
   final Locale _locale;
-  static Locale? activeLocale;
+  static Locale? _activeLocaleHolder;
+  Locale? get activeLocal => _activeLocaleHolder;
 
   static #CLASS_NAME# of(BuildContext context) => 
     Localizations.of<#CLASS_NAME#>(context, #CLASS_NAME#)!;
@@ -109,7 +110,7 @@ class #CLASS_NAME# {
   static const String ending = '''
 
   static Future<#CLASS_NAME#> load(Locale locale) async {
-      activeLocale = locale;
+      _activeLocaleHolder = locale;
     final translations = #CLASS_NAME#(locale);
     _localizedValues = _allValues[locale.toString()]!;
     return translations;
