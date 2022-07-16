@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:excel_localization/src/services/excel_localization.dart';
 import 'package:yaml/yaml.dart';
+
 /// this is entry point of main file
 void main() {
   /// try to load settings from the project's pubspec.yaml

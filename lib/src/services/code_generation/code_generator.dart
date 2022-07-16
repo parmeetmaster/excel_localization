@@ -59,7 +59,6 @@ class CodeGenerator {
   void setSupportedLanguages(List<String> supportedLanguages) {
     _supportedLanguages = supportedLanguages;
 
-
     /// supported locals are generate string
     var supportedLocals = 'static final Set<Locale> supportedLocals = {\n';
     for (var lang in supportedLanguages) {
@@ -93,6 +92,7 @@ class CodeGenerator {
     final hasParameters = _parametersRegex.hasMatch(defaultWord);
     if (hasParameters) {
       var parameters = '';
+
       /// Here we are checking is using using d as int and s string
       final matches = _parametersRegex.allMatches(defaultWord).toList();
       for (final match in matches) {
