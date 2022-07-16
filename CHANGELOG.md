@@ -1,3 +1,9 @@
+
+## 0.1.1
+
+* Now user can check which locale is curruntly active via return active locale instance
+
+
 ## 0.0.6
 
 * Linux and windows support added and web support fixed

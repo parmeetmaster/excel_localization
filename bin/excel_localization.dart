@@ -60,7 +60,7 @@ class _YamlArguments {
   static const commentLanguages = 'comment_languages';
 }
 
-/// Returns configuration settings for flappy_translator from pubspec.yaml
+/// Returns configuration settings for excel_localization from pubspec.yaml
 Map<String?, dynamic> _loadSettings() {
   final file = File(_pubspecFilePath);
   final yamlString = file.readAsStringSync();
