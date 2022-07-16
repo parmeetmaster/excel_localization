@@ -26,7 +26,7 @@ class #CLASS_NAME# {
   final Locale _locale;
   static Locale? _activeLocaleHolder;
   //This below argument created due to forward static value to non static instance.
-  Locale? get _activeLocale => _activeLocaleHolder;
+  Locale? get activeLocale => _activeLocaleHolder;
 
   static #CLASS_NAME# of(BuildContext context) => 
     Localizations.of<#CLASS_NAME#>(context, #CLASS_NAME#)!;
