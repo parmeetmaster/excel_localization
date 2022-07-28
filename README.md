@@ -1,5 +1,9 @@
 # Excel Localization
 
+[![Pub Version](https://img.shields.io/pub/v/excel_localization?style=flat-square&logo=dart)](https://pub.dev/packages/excel_localization) [![likes](https://badges.bar/excel_localization/likes)](https://pub.dev/packages/excel_localization/score) [![likes](https://badges.bar/excel_localization/pub%20points)](https://pub.dev/packages/excel_localization/score) ![GitHub issues](https://img.shields.io/github/issues/parmeetmaster/excel_localization?style=flat-square) ![GitHub repo size](https://img.shields.io/github/repo-size/parmeetmaster/excel_localization?style=flat-square) ![GitHub license](https://img.shields.io/github/license/aissat/easy_localization?style=flat-square)
+
+
+
 A tool which automatically generates Flutter localization resources from CSV and Excel files.
 
 This is especially useful as any team member can edit the CSV/Excel file, with the subsequent translations imported into the project via a terminal command. Basic variables (strings and integers) are supported, however neither genders nor plurals are planned to be supported. If you require such functionality, consider using [arb_generator](https://pub.dev/packages/arb_generator).
